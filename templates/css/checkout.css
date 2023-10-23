@@ -1,0 +1,25 @@
+.card--checkout img {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 100%;
+  object-fit: cover;
+}
+
+.input_field {
+  border: 1px solid #D8D8D8;
+  border-radius: 20px;
+  width: 200px;
+  height: 30px;
+  padding-left: 1rem;
+
+}
+
+.button--promocode {
+  margin-left: -2rem;
+  border: none;
+  background: transparent;
+}
+
+.promocode-container {
+  margin-right: 2rem;
+}

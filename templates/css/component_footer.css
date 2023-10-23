@@ -1,0 +1,109 @@
+.footer {
+    background-color: white;
+    width: 100%;
+
+}
+
+.footer__line {
+    height: 18px;
+    background-color: #FDB441;
+}
+
+.footer__conditions {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.footer__conditions > *:nth-child(2) {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.footer__container {
+    justify-content: space-evenly;
+    margin-top: 2rem;
+}
+
+.footer__container > * {
+}
+
+.customer__service {
+    padding: 0 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.about__us {
+    display: flex;
+    flex-direction: column;
+}
+
+.subscribe__newsletter div {
+    margin-top: 1rem;
+    color: #555;
+    padding: 2px;
+    border-radius: 5px;
+    background-color: #FAFAFA;
+}
+
+.subscribe__newsletter input {
+    height: 40px;
+    width: 416px;
+}
+
+.subscribe__newsletter button[type="submit"] {
+    text-indent: -999px;
+    overflow: hidden;
+    width: 50px;
+    height: 2.5rem;
+    padding: 0;
+    margin: 0;
+    border: 1px solid transparent;
+    border-radius: 15px;
+    background: transparent url("../img/send.svg") no-repeat center;
+    cursor: pointer;
+    background-color: #FDB441;
+}
+
+.subscribe__newsletter button[type="submit"]:hover {
+    opacity: 1;
+}
+
+.subscribe__newsletter button[type="submit"]:focus,
+input[type="email"]:focus {
+    box-shadow: 0 0 3px 0 #1183d6;
+    border-color: #1183d6;
+    outline: none;
+}
+
+.subscribe__newsletter input[type="email"] {
+    border: none;
+    background: transparent;
+    margin: 0;
+    padding: 7px 8px;
+    font-size: 14px;
+    color: inherit;
+    border: 1px solid transparent;
+    border-radius: inherit;
+}
+
+.subscribe__newsletter .input[type="email"]::placeholder {
+    color: #bbb;
+}
+
+.follow_us {
+    margin-top: 1rem;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.follow__us_socials {
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.follow__us_socials a {
+    margin-right: 1rem;
+}

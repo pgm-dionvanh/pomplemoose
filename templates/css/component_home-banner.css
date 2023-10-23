@@ -1,0 +1,27 @@
+.banner__info {
+    align-items: center;
+    width: 100%;
+    height: 592px;
+    background-image: url("../img/banner.svg");
+    object-fit: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.banner__info .new__collection {
+    width: 571px;
+    height: 124px;
+    background-color: rgba(250,250,250,0.87);
+    align-items: center;
+    margin-bottom: 3rem;
+    border-radius: 84px;
+    margin-left: -3rem;
+    
+}
+
+.banner__info .new__collection > * {
+    color: var(--text-color--yellow);
+    font-size: 49px;
+    margin-left: 11rem;
+}

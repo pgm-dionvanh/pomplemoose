@@ -1,0 +1,10 @@
+{
+    "sign_in": "Sign in",
+    "not_aMember": "Not a member",
+    "sign_up": "Sign up",
+    "forgot_password": "Forgot password",
+    "keep_signedIn": "Keep me signed in",
+    "password_field": "Password*",
+    "send_mail": "Send",
+    "forgot_password__title": "Forgot your password?"
+}

@@ -1,0 +1,62 @@
+
+
+
+.banner_topics {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+
+.item_1 {
+    width:505px;
+    height:298px;
+    background-image: url("../img/new_arrivals.svg");
+}
+
+.item_2 {
+    width:252px;
+    height:298px;
+    background-image: url("../img/basic-tshirt.svg");
+    background-repeat: no-repeat;
+
+}
+
+.item_3 {
+    width:252px;
+    height:298px;
+    background-image: url("../img/sale.svg");
+    background-repeat: no-repeat;
+}
+
+.item_2 .item__description {
+    width: 50%;
+    color: white;
+    margin-left: 2rem;
+    font-size: 20px;
+}
+
+.item_3 .item__description {
+    width: 40%;
+    color: black;
+    margin-left: 2rem;
+    font-size: 20px;
+}
+
+
+.item_1 .item__description {
+    color: white;
+    width: 25%;
+    margin-left: 2rem;
+    font-size: 20px;
+}
+
+.item__description button {
+    background-color: white;
+    border-radius: 20px;
+    border: none;
+    margin-top: 1rem;
+    width: 10rem;
+    padding: 0.5rem;
+    text-align: center;
+}

@@ -1,0 +1,23 @@
+.button {
+  border-radius: 20px;
+  padding: 0.8rem 2rem;
+  border: none;
+}
+
+.button--primary {
+  background-color: #FBB03B;
+}
+
+.button--secundary {
+  border: 2px #D8D8D8 solid;
+}
+
+.button--payment {
+  height: 3rem;
+  width: 8rem;
+  border-radius: 20px;
+}
+
+.bold {
+  font-weight: bold;
+}

@@ -1,0 +1,101 @@
+
+.filter-container {
+  width: 30%;
+}
+
+.filter {
+  border: 2px solid #E6E6E6;
+  margin-bottom: 2rem;
+  padding: 0.5rem 1rem 3rem 1rem;
+}
+
+
+.card {
+  background: #cecece;
+  width: 242px;
+  height: 280px;
+  border-radius: 20px;
+  position: relative;
+
+}
+
+.card img {
+  width: 242px;
+  height: 190px;
+  object-fit: cover;
+}
+
+.wishlist img {
+  width: 1.5rem;
+  height: 1.5rem;
+  }
+
+.wishlist {
+  background-color: #16CB93;
+  padding: 0.5rem;
+  width: 3.5rem;
+  border-radius: 50%;
+  position: absolute;
+  right: 1rem;
+  top: 10rem;
+}
+
+.card__title {
+  margin-top: 1rem;
+  width: 100%;
+}
+
+.price {
+  color: #FDB441;
+}
+
+.add-wishlist {
+  color: #16CB93;
+}
+
+.button__size {
+  width: 42px;
+  height: 42px;
+}
+
+.colors {
+  height: 42px;
+  width: 42px;
+  border: 2px solid #D4D4D4;
+  
+}
+
+.color {
+  width: 25px;
+  height: 25px;
+}
+
+.color--black {
+  background-color: black;
+}
+
+.color--pink {
+  background-color: pink;
+}
+
+.color--blue {
+  background-color: blue;
+}
+
+.color--white {
+  background-color: white;
+  border: 1px solid #D4D4D4;
+}
+
+.color--brown {
+  background-color: brown;
+}
+
+.color--red {
+  background-color: red;
+}
+
+.filter__title {
+  margin: 2rem;
+  
+}

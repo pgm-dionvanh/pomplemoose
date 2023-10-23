@@ -1,0 +1,47 @@
+.choose__us {
+    margin-bottom: 4rem;
+}
+
+@media (min-width: 320px) {
+    .choose__us {
+        flex-wrap: wrap;
+    }
+}
+
+@media (min-width:1025px) { 
+    .choose__us {
+        flex-wrap: nowrap;
+    }
+}
+
+
+@media (min-width:1281px) {
+    .choose__us {
+        flex-wrap: nowrap
+    }
+}
+
+.chooseus h2 {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+.choose__us_item {
+    flex-direction: column;
+    align-items: center;
+}
+
+.choose__us_item img {
+    margin-top: 1rem;
+    width: 4rem;
+}
+
+.choose__us_item h3 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.choose__us_item span {
+    text-align: center;
+    width: 60%;
+}

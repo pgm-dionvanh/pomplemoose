@@ -1,0 +1,41 @@
+.description {
+  width: 40%;
+}
+
+.description__text {
+  width: 80%;
+}
+
+.materials {
+  width: 40%;
+}
+
+.product-container {
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.img-container {
+  gap: 1rem;
+}
+
+.small__img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+.big__img {
+  width: 476px;
+  height: 406px;
+  object-fit: cover;
+}
+
+.card__img {
+  width: 240px;
+  height: 315px;
+}
+
+.description-container {
+  margin-bottom: 2rem;
+}

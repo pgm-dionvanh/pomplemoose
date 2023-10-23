@@ -1,0 +1,194 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type Cart {
+  colors: [Color!]!
+  id: Int!
+  product: Product!
+  productId: Int!
+  quantity: Int!
+  user: User!
+  userId: Int!
+}
+
+type Category {
+  id: Int!
+  name: String!
+  products: [Product!]
+}
+
+type Color {
+  id: Int!
+  name: String!
+}
+
+input CreateCartInput {
+  colors: [CreateColorInput!]!
+  productId: Float!
+  quantity: Float!
+  userId: Float!
+}
+
+input CreateCategoryInput {
+  name: String!
+}
+
+input CreateColorInput {
+  name: String!
+}
+
+input CreateProductInput {
+  categoryId: Int!
+  color: [CreateColorInput!]!
+  description: String!
+  imageUrl: String!
+  name: String!
+  price: Int!
+  productTypeId: Int!
+  size: [CreateSizeInput!]!
+}
+
+input CreateProductTypeInput {
+  name: String!
+}
+
+input CreateSizeInput {
+  name: String!
+}
+
+input CreateUserInput {
+  confirm_password: String!
+  email: String!
+  firstName: String!
+  lastName: String!
+  password: String!
+}
+
+input CreateWishlistInput {
+  productId: Int!
+  userId: Int!
+}
+
+type Mutation {
+  createCart(createCartInput: CreateCartInput!): Cart!
+  createCategory(createCategoryInput: CreateCategoryInput!): Category!
+  createColor(createColorInput: CreateColorInput!): Color!
+  createProduct(createProductInput: CreateProductInput!): Product!
+  createProductType(createProductTypeInput: CreateProductTypeInput!): ProductType!
+  createSize(createSizeInput: CreateSizeInput!): Size!
+  createUser(createUserInput: CreateUserInput!): User!
+  createWishlist(createWishlistInput: CreateWishlistInput!): Wishlist!
+  removeCart(id: Int!): Cart!
+  removeCategory(id: Int!): Category!
+  removeProduct(id: Int!): Product!
+  removeUser(id: Int!): User!
+  removeWishlist(id: Int!): Wishlist!
+  updateCart(updateCartInput: UpdateCartInput!): Cart!
+  updateCategory(updateCategoryInput: UpdateCategoryInput!): Category!
+  updateProduct(updateProductInput: UpdateProductInput!): Product!
+  updateUser(updateUserInput: UpdateUserInput!): User!
+  updateWishlist(updateWishlistInput: UpdateWishlistInput!): Wishlist!
+}
+
+type Product {
+  category: Category!
+  categoryId: Int!
+  colors: [Color!]!
+  description: String!
+  id: Int!
+  imageUrl: String!
+  name: String!
+  price: Int!
+  productType: ProductType!
+  productTypeId: Int!
+  sizes: [Size!]!
+  wishlist: [Wishlist!]
+}
+
+type ProductType {
+  id: Int!
+  name: String!
+  products: [Product!]
+}
+
+type Query {
+  cart(id: Int!): Cart!
+  carts: [Cart!]!
+  cartsbyuser(userId: Int!): [Cart!]!
+  categories: [Category!]!
+  category(id: Int!): Category!
+  colors: [Color!]!
+  product(id: Int!): Product!
+  productTypes: [ProductType!]!
+  products: [Product!]!
+  sayHello: String!
+  sizes: [Size!]!
+  user(id: Int!): User!
+  users: [User!]!
+  wishlist(id: Int!): Wishlist!
+  wishlists: [Wishlist!]!
+}
+
+type Size {
+  id: Int!
+  name: String!
+}
+
+input UpdateCartInput {
+  colors: [CreateColorInput!]
+  id: Int!
+  productId: Float
+  quantity: Float
+  userId: Float
+}
+
+input UpdateCategoryInput {
+  id: Int!
+  name: String
+}
+
+input UpdateProductInput {
+  categoryId: Int
+  color: [CreateColorInput!]
+  description: String
+  id: Int!
+  imageUrl: String
+  name: String
+  price: Int
+  productTypeId: Int
+  size: [CreateSizeInput!]
+}
+
+input UpdateUserInput {
+  confirm_password: String
+  email: String
+  firstName: String
+  id: Int!
+  lastName: String
+  password: String
+}
+
+input UpdateWishlistInput {
+  id: Int!
+  productId: Int
+  userId: Int
+}
+
+type User {
+  cart: Cart!
+  email: String!
+  firstName: String!
+  id: Int!
+  lastName: String!
+  password: String!
+  wishlist: [Wishlist!]
+}
+
+type Wishlist {
+  id: Int!
+  productId: Int!
+  products: Product!
+  user: User!
+  userId: Int!
+}

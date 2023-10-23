@@ -1,0 +1,23 @@
+{
+  "name": "pomplemoose",
+  "version": "1.0.0",
+  "private": true,
+  "main": "index.js",
+  "engines": {
+    "node": ">=16"
+  },
+  "license": "MIT",
+  "workspaces": [
+    "frontend",
+    "backend"
+  ],
+  "scripts": {
+    "build": "yarn install --workspace=frontend && yarn install --workspace=backend && yarn workspace frontend build",
+    "start:dev": "concurrently \"yarn workspace backend start:dev\" \"yarn workspace frontend dev\"",
+    "start:frontend": "yarn workspace frontend dev",
+    "db:seed": "yarn workspace backend seed:run"
+  },
+  "devDependencies": {
+    "@types/react-helmet": "^6.1.5"
+  }
+}

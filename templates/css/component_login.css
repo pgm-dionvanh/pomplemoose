@@ -1,0 +1,100 @@
+.form__container {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form__container h2,p {
+    text-align: center;
+}
+
+.form__container {
+    margin-top: 5.5rem;
+    margin-bottom: 7rem;
+}
+
+.auth__form {
+    width: 448px;
+    font-size: 13px;
+}
+
+.auth__form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.auth__form .input_field {
+    border: 1px solid #D8D8D8;
+    border-radius: 20px;
+    width: 448px;
+    height: 50px;
+    padding-left: 1rem;
+    margin-bottom: 1rem;
+}
+
+.link--auth {
+    display:flex;
+    color: black;
+    text-decoration: none;
+    justify-content: center;
+}
+
+.link--auth b {
+    margin-left: 1rem;
+}
+
+.login__buttons {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 1rem;
+}
+
+.login__buttons .fb--button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 214px;
+    height: 56px;
+    padding: 1rem;
+    border-radius: 20px;
+    background-color: #3B5998;
+    color: white;
+    border: 1px solid #707070;
+}
+
+.login__buttons .fb--button img {
+    margin-right: 1rem;
+}
+
+.login__buttons .gm--button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 214px;
+    height: 56px;
+    padding: 1rem;
+    border-radius: 20px;
+    background-color: white;
+    color: black;
+    border: 1px solid #F1584D;
+}
+
+.login__buttons .gm--button img {
+    margin-right: 1rem;
+    width: 24px;
+    height: 24px;
+}
+
+.primary__button {
+    background-color: #FBB03B;
+}
+
+.login__actions {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.checkbox {
+    display: flex;
+}
